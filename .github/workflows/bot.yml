@@ -113,7 +113,7 @@ jobs:
         id: linter
         uses: super-linter/super-linter@v8.4.0
         env:
-          GITHUB_TOKEN: ${{ steps.app-token.outputs-token }}
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
           VALIDATE_JAVASCRIPT_PRETTIER: true
           VALIDATE_TYPESCRIPT_PRETTIER: true
           VALIDATE_ALL_CODEBASE: false
